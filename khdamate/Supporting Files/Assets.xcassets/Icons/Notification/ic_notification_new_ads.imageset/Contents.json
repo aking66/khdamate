@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "ic_notification_new_ads.pdf",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

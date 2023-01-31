@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="WalkthroughCollectionViewCell" id="Kp8-fP-TPz" customClass="WalkthroughCollectionViewCell" customModule="khdamate" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="336" height="405"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Rbi-SD-ANc">
+                <rect key="frame" x="0.0" y="0.0" width="336" height="405"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="zWc-1x-8AW">
+                        <rect key="frame" x="0.0" y="0.0" width="336" height="405"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="Sw1-xx-aYM">
+                                <rect key="frame" x="0.0" y="21" width="336" height="363.5"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_walkthrough_img" translatesAutoresizingMaskIntoConstraints="NO" id="Zcc-9S-RkQ">
+                                        <rect key="frame" x="47.5" y="0.0" width="241" height="241"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="Zcc-9S-RkQ" secondAttribute="height" multiplier="1:1" id="Mm5-5j-kMk"/>
+                                            <constraint firstAttribute="width" constant="241" id="MyS-15-4dY"/>
+                                        </constraints>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="azr-ND-4i2">
+                                        <rect key="frame" x="48" y="291" width="240" height="72.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Service Providers" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CPD-rI-gAR">
+                                                <rect key="frame" x="40.5" y="0.0" width="159" height="23"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                                                <color key="textColor" name="#0096B4"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tvu-gt-F9D">
+                                                <rect key="frame" x="0.0" y="39" width="240" height="33.5"/>
+                                                <string key="text">Browse the largest Variety of service 
+Provider and get things done.</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <color key="textColor" name="#000000"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="zWc-1x-8AW" firstAttribute="leading" secondItem="Rbi-SD-ANc" secondAttribute="leading" id="Ac8-fb-yC5"/>
+                    <constraint firstAttribute="trailing" secondItem="zWc-1x-8AW" secondAttribute="trailing" id="NhH-aq-Yjg"/>
+                    <constraint firstAttribute="bottom" secondItem="zWc-1x-8AW" secondAttribute="bottom" id="atm-YL-j5B"/>
+                    <constraint firstItem="zWc-1x-8AW" firstAttribute="top" secondItem="Rbi-SD-ANc" secondAttribute="top" id="d4F-65-hCZ"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <size key="customSize" width="336" height="405"/>
+            <connections>
+                <outlet property="img" destination="Zcc-9S-RkQ" id="VNi-xV-8Nu"/>
+                <outlet property="lblDescription" destination="Tvu-gt-F9D" id="4ve-1g-ag6"/>
+                <outlet property="lblTitle" destination="CPD-rI-gAR" id="K4U-pu-oYi"/>
+            </connections>
+            <point key="canvasLocation" x="313.04347826086956" y="-25.78125"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="ic_walkthrough_img" width="241" height="241"/>
+        <namedColor name="#000000">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="#0096B4">
+            <color red="0.0" green="0.58823529411764708" blue="0.70588235294117652" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

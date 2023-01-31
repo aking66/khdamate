@@ -1,6 +1,0 @@
-framework module SONetwork {
-  umbrella header "SONetwork-umbrella.h"
-
-  export *
-  module * { export * }
-}

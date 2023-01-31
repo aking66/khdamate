@@ -1,0 +1,422 @@
+/************************* Mo’min J.Abusaada *************************/
+//
+//  Localizable.strings
+//  khdamate
+//
+//  Created by Mo'min J.Abusaada on 28/09/2021.
+//
+
+"AppName" = "خدماتي";
+
+"Poppins-Regular" = "Tajawal-Regular";
+"Poppins-SemiBold" = "Tajawal-Bold";
+"Poppins-Medium" = "Tajawal-Medium";
+
+//Common
+"Error"                                                                           = "خطأ";
+"Info"                                                                            = "معلومات";
+"Done"                                                                            = "تم";
+"OK"                                                                              = "نعم";
+"Cancel"                                                                          = "إلغاء";
+"Attention"                                                                       = "تنبيه";
+"An error occurred"                                                               = "حدث خطأ";
+"English"                                                                         = "إنجليزي";
+"Arabic"                                                                          = "عربي";
+"No Data To Show"                                                                 = "لا يوجد شيء لعرضه";
+"No new orders yet."                                                              = "لا يوجد طلبات جديدة";
+"TitleChangeLanguage"                                                             = "هل تريد فعلاً تغيير اللغة ؟";
+"SubTitleChangeLanguage"                                                          = "سوف يتم إغلاق التطبيق";
+"HTMLDirection"                                                                   = "rtl";
+"Settings"                                                                        = "إعدادات";
+"Login"                                                                           = "تسجيل الدخول";
+"Login Permission"                                                                = "هذه الميزة فقط للمسجيلين في التطبيق \nهل تريد تسجيل الدخول";
+"This service will be available later"                                            = "هذه الخدمة ستتوفر لاحقاً";
+"Need To Permission"                                                              = "نحتاج لإعطاء صلاحيات للتطبيق";
+"The application is unable to give you valid data without getting your location!" = "التطبيق غير قادر على إعطاءك بيانات صحيحة بدون إستخدام موقعك!";
+"Do you want to take a photo or a selection from the Gallery!"                    = "هل تريد إلتقاط صورة أم اختيار من الألبوم!";
+"TitleMessageEmail"                                                               = "عنوان الرسالة";
+"MessageBodyEmail"                                                                = "نص الرسالة";
+"Capture image"                                                                   = "إلتقاط صورة";
+"Chose From Gallery"                                                              = "اختيار من الألبوم";
+"Choose Document"                                                              = "اختيار ملف";
+"IQDropDownTextField_optionalItemText"                                            = "بدون تحديد";
+"PleaseAcceptTheTerms"                                                            = "يرجى قبول الشروط!";
+"DoneSuccessfully"                                                                = "تمت العملية بنجاح";
+"TextFeildValidation"                                                             = "عذراً، حقل %@ مطلوب";
+"InvalidEmail"                                                                    = "عذراً، البريد الإلكتروني غير صحيح!";
+"InvalidPassword"                                                                 = "عذراً، كلمة المرور غير متطابقة";
+"MobileDigits"                                                                    = "عذراً، رقم الجوال لابد أن يكون %@ خانة";
+"Login"                                                                           = "تسجيل الدخول";
+"Logout"                                                                          = "تسجيل الخروج";
+"Signin"                                                                          = "تسجيل الدخول";
+"Signout"                                                                         = "تسجيل الخروج";
+"Register"                                                                        = "تسجيل";
+"Registration"                                                                    = "التسجيل";
+"ForgeotPassword"                                                                 = "نسيت كلمة المرور";
+"Search"                                                                          = "البحث";
+"Code"                                                                            = "كود التفعيل";
+"UserName"                                                                        = "اسم المستخدم";
+"FullName"                                                                        = "الاسم كاملاً";
+"Name"                                                                            = "الاسم";
+"Email"                                                                           = "البريد الإلكتروني";
+"Password"                                                                        = "كلمة المرور";
+"OldPassword"                                                                     = "كلمة المرور القديمة";
+"NewPassword"                                                                     = "كلمة المرور الجديدة";
+"MobileNumber"                                                                    = "رقم الجوال";
+"CurrentLocation"                                                                 = "الموقع الحالي";
+"Address"                                                                         = "العنوان";
+"Country"                                                                         = "الدولة";
+"City"                                                                            = "المدينة";
+"Message"                                                                         = "الرسالة";
+"BirthDay"                                                                        = "تاريخ الميلاد";
+"Male"                                                                            = "ذكر";
+"Female"                                                                          = "أنثى";
+"AboutUS"                                                                         = "من نحن";
+"ContactUS"                                                                       = "إتصل بنا";
+"SearchHere"                                                                      = "إبحث هنا ,,,";
+"Description"                                                                      = "الوصف";
+"Total Price"                                                                      = "سعر الخدمة: ";
+"SuccessSendRequest"                                                              = "العملية تمت بنجاح";
+"FileSize"                                                                        = "الملف المختار يحب أن يقل حجمه عن 10 ميجا";
+"LoginIsRequired"                                                                 = "الرجاء تسجيل الدخول للإستفادة الأكبر من البرنامج !";
+"logInSuccess"                                                                    = "تم تسجيل الدخول بنجاح.";
+"logOutSuccess"                                                                   = "تم تسجيل الخروج بنحاح";
+"UpdateProfileSuccess"                                                            = "تم تحديث الملف الشخصي بنجاح.";
+"RegisterSuccess"                                                                 = "تمت عملية التسجيل نجاح";
+"ResetPasswordSuccess"                                                            = "تم إستعادة كلمة المرور بنجاح.";
+"ResetCodeToResetPasswordSuccess"                                                 = "تم إرسال رمز إعادة تعيين كلمة المرور بنجاح.";
+"SuccessfullyAddedToFavorites"                                                    = "تمت الإضافة بنجاح إلى المفضلة!";
+"SuccessfullyRemovedToFavorites"                                                  = "تمت الإزالة بنجاح من المفضلة!";
+"messege_application_will_exit"                                                   = "سيتم إغلاق التطبيق الأن .. يرجى فتحه مرة اخرى ليتم تطبيق اللغة";
+"takePhotoText"                                                                   = "التقط صورة";
+"takeVideoText"                                                                   = "تصوير فيديو";
+"noSourcesText"                                                                   = "لا يوجد مصادر";
+"Good Morning" = "صباح الخير";
+"Good Afternoon" = "مساء الخير";
+"Good Evening" = "مساء الخير";
+"alert_delete_image" = "هل تريد حذف هذه الصورة؟";
+"alert_select_later_date" = "لا يمكنك اختيار تاريخ سابق";
+"Riyal"                                                                        = "ريال";
+"PleaseSelectOneOfCancelReasons" = "الرجاء اختيار واحد من اسباب الالغاء";
+"Do you want to take a photo or a selection from the Gallery!"                    = "هل تريد إلتقاط صورة أم اختيار من الألبوم!";
+"Capture image"                                                                   = "إلتقاط صورة";
+"Chose From Gallery"                                                              = "اختيار من الألبوم";
+
+//WalkthroughVC
+"WalkthroughVC_btnSkip_title" = "تخطى";
+
+
+//LoginVC
+"LoginVC_btnGuest_text" = "ضيف";
+"LoginVC_lblTitle_text_1" = "اكمل مهامك";
+"LoginVC_lblTitle_text_2" = "خدماتي";
+"LoginVC_lblPhoneNumber_text" = "رقم الجوال";
+"LoginVC_lblPassword_text" = "كلمة المرور";
+"LoginVC_btnForgotPassword_text" = "نسيت كلمة المرور؟";
+"LoginVC_btnSignIn_text" = "تسجيل الدخول";
+"LoginVC_btnRegistration_text_1" = "ليس لديك حساب";
+"LoginVC_btnRegistration_text_2" = "تسجيل!";
+"Comments" = "التعليق";
+
+
+//RegistrationTypeSelectionVC
+"RegistrationTypeSelectionVC_lblTitle_text" = "تسجيل";
+"RegistrationTypeSelectionVC_lblDescription_text" = "اشترك كمزود خدمة أو عميل";
+"RegistrationTypeSelectionVC_btnClient_text" = "مستخدم";
+"RegistrationTypeSelectionVC_btnServiceProvider_text" = "مقدم الخدمة";
+
+
+
+
+//RegestrationVC
+"RegestrationVC_lblTitle_text_1" = "سجل في ";
+"RegestrationVC_lblTitle_text_2" = "خدماتي";
+"RegestrationVC_lblUsername_text" = "الإسم كامل";
+"RegestrationVC_lblIDNumber_text" = "الرقم الوطني";
+"RegestrationVC_lblServicesProvided_text" = "الخدمات الرئيسية";
+"RegestrationVC_lblSubServicesProvided_text" = "الخدمات الفرعية";
+"RegestrationVC_txtServicesProvided_text" = "اختر الخدمة";
+"RegestrationVC_lblProfessionLicense_text" = "رخصة مهنة";
+"RegestrationVC_txtProfessionLicense_text" = "رفع الرخصة";
+"RegestrationVC_btnTerms_text_title" = "بالنقر فوق تسجيل الدخول ، فإنك توافق على";
+"RegestrationVC_btnTerms_text_Terms" = "الأحكام والشروط";
+"RegestrationVC_btnTerms_text_And" = " و ";
+"RegestrationVC_btnTerms_text_Privacy" = "سياسة خاصة";
+"RegestrationVC_btnRegistration_text" = "تسجيل";
+"RegestrationVC_number_check" = "سنرسل رسالة تفعيل لك عند التأكد من بياناتك";
+
+"Services" = "الخدمات";
+
+
+//VerificationCodeVC
+"VerificationCodeVC_title" = "تحقق من رقم الجوال";
+"VerificationCodeVC_lblPhone_title" = "ادخل رمز التفعيل المرسل إلى";
+"VerificationCodeVC_btnContiune_title" = "متابعة";
+"VerificationCodeVC_btnResend_title_1" = "لم يصلك الرمز ؟";
+"VerificationCodeVC_btnResend_title_2" = "إعادة الإرسال";
+"Send another pin in ( "              = "ارسال كود جديد خلال ( ";
+" ) s"                                = " ) ثانية";
+
+
+
+//ForgetPasswordPhoneVC
+"ForgetPasswordPhoneVC_title" = "نسيت كلمة المرور";
+"ForgetPasswordPhoneVC_lblTitle_text" = "أدخل رقم الجوال";
+"ForgetPasswordPhoneVC_lblMobileNumber_text" = "رقم الجوال";
+"ForgetPasswordPhoneVC_btnRestPassword_text" = "إعادة تعيين كلمة المرور";
+
+
+//ResetPasswordVC
+"ResetPasswordVC_title" = "إعادة تعيين كلمة المرور";
+"ResetPasswordVC_lblNewPassword_text" = "كلمة مرور جديدة";
+"ResetPasswordVC_lblConfirmPassword_text" = "تأكيد كلمة المرور";
+"ResetPasswordVC_btnRestPassword_text" = "إعادة تعيين كلمة المرور";
+
+
+
+//MainTabBarC
+"MainTabBarC_home_title" = "الرئيسية";
+"MainTabBarC_orders_title" = "الطلبات";
+"MainTabBarC_more_title" = "المزيد";
+"MainTabBarC_Calendar_title" = "الأجندة";
+
+
+//HomeSearchView
+"HomeSearchView_txtSearch" = "عن ماذا تبحث؟";
+
+
+//HomeVC
+"HomeVC_lblCategory" = "التصنيفات";
+
+
+//HomeSliderCollectionViewCell
+"HomeSliderCollectionViewCell_btnAction" = "ابدأ الآن";
+
+
+//HomeSearchVC
+"HomeSearchVC_title" = "البحث";
+
+
+//ServicesListVC
+"ServicesListVC_title" = "مزودي الخدمة";
+"ServicesListVC_favourite_title" = "الخدمات المفضلة";
+"ServicesListVC_services_title" = "الخدمات الفرعية";
+
+//OrdersVC
+"OrdersVC_title" = "طلباتك";
+
+
+//OrderListType
+"OrderListType_offers" = "العروض";
+"OrderListType_new" = "الجديدة";
+"OrderListType_current" = "الحالية";
+"OrderListType_accepted" = "المقبولة";
+"OrderListType_rejected" = "المرفوضة";
+"OrderListType_completed" = "المكتملة";
+"OrderListType_confirmed" = "المعتمدة";
+"Accepted" = "قبول";
+"Saved Event" = "تم حفظ الموعد";
+
+"Implementation Date" = "تحديد االوقت";
+"Add to my calendar" = "اضافة الي التقويم";
+//NotificationsListVC
+"NotificationsListVC_title" = "التنبيهات";
+
+//MoreVC
+"MoreVC_titleProvider" = "إجمالي الطلبات المنجزة";
+"MoreVC_titleCustomer" = "إجمالي الطلبات";
+"MoreVC_lblCurrentStatus" = "الحالة الحالية";
+"MoreVC_lblOnlineOffline" = "متصل/غير متصل";
+"DoYouWantToLogout" = " هل تريد تأكيد الخروج";
+
+//MoreListType
+"MoreListType_profile" = "الملف الشخصي";
+"MoreListType_settings" = "الإعدادات";
+"MoreListType_favorite" = "الخدمات المفضلة";
+"MoreListType_about" = "حول التطبيق";
+"MoreListType_contanctUS" = "اتصل بنا";
+"MoreListType_privacy" = "سياسة خاصة";
+"MoreListType_logout" = "تسجيل خروج";
+"MoreListType_login" = "تسجيل الدخول";
+"MoreListType_password" = "كلمة المرور";
+"MoreListType_language" = "اللغة";
+"MoreListType_Wallet" = "المحفظة";
+
+
+//ContactUSVC
+"ContactUSVC_btnRequest" = "إرسال";
+"ContactUSVC_lblInquiryType" = "نوع الاستفسار";
+"ContactUSVC_lblTitle" = "عنوان الرسالة";
+"ContactUSVC_lblDetails" = "تفاصيل";
+"ContactUSVC_lblDirectContact_text" = "أو يمكنك التواصل معنا من خلال :";
+"ContactUSVC_lblReason_text" = "السبب";
+"ContactUSVC_lblTitle_text" = "عنوان الرسالة";
+"ContactUSVC_lblMessage_text" = "الرسالة";
+"ContactUSVC_btnSend_text" = "إرسال";
+"ContactUSVC_lblDirectContact_text" = "أو يمكنك التواصل معنا من خلال :";
+
+//ProfileChangePasswordVC
+"ProfileChangePasswordVC_title" = "تغيير كلمة المرور";
+"ProfileChangePasswordVC_lblCurrentPassword_text" = "كلمة المرور الحالية";
+"ProfileChangePasswordVC_lblNewPassword_text" = "كلمة المرور الجديدة";
+"ProfileChangePasswordVC_lblConfirmNewPassword_text" = "تأكيد كلمة المرور";
+"ProfileChangePasswordVC_btnConfirm_text" = "تأكيد";
+"ProfileChangePasswordVC_changeSuccess" = "تم تغير رقمك السري بنجاح";
+
+
+//EditProfileVC
+"EditProfileVC_lblPersonalDetails" = "تفاصيل شخصية";
+"EditProfileVC_lblEmail" = "البريد الالكتروني";
+"EditProfileVC_lblAddress" = "العنوان";
+"EditProfileVC_btnUpdate" = "تحديث";
+
+
+//AgendaVC
+"AgendaVC_title" = "جدول أعمال";
+
+
+//OrderDetailsVC
+"OrderDetailsVC_title" = "تفاصيل الطلب";
+"OrderDetailsVC_lblPrimaryType" = "النوع الأساسي";
+"OrderDetailsVC_lblSecondaryType" = "النوع الثانوي";
+"OrderDetailsVC_lblServiceTitle" = "عنوان الخدمة";
+"OrderDetailsVC_lblServiceDetails" = "تفاصيل الخدمة";
+"OrderDetailsVC_lblDate" = "التاريخ";
+"OrderDetailsVC_lblTime" = "الوقت";
+"OrderDetailsVC_lblTime_PM" = "م";
+"OrderDetailsVC_lblTime_AM" = "ص";
+"OrderDetailsVC_lblUploadPhotos" = "تحميل الصور";
+"OrderDetailsVC_lblPhotos" = "الصور";
+"OrderDetailsVC_lblServiceCost" = "تكلفة الخدمة";
+"OrderDetailsVC_lblGeneralNotes" = "ملاحظات عامة";
+"OrderDetailsVC_lblAdrress" = "العنوان";
+"OrderDetailsVC_btnRequest" = "طلب";
+"OrderDetailsVC_btnSendOffer" = "إرسال الطلب";
+"OderSuccess" = "تم ارسال الطلب لمزودين الخدمة";
+"OfferSuccess" = "تم ارسال العرض للزبون";
+"PaySuccess" = "سنعلم مزود الخدمة";
+"RejectSuccess" = "تم رفض الطلب";
+"ExcuteSuccess" = "يمكنك الان البدء بتنفيذ الخدمة";
+"FinishSuccess" = "لقد أنهيت خدمتك, سيأكد العميل على خدمتك.";
+"location error" = "الرجاء اختيار موقع في نطاق مدينتك";
+"AfterTomorrow" = "بعد غد";
+"Tomorrow" = "غدا";
+"Today" = "اليوم";
+
+//ChatOrderVC
+"ChatOrderVC_btnViewDetails_text" = "عرض التفاصيل";
+"ChatOrderVC_lblService_text" = "الخدمة";
+"ChatOrderVC_lblPickup_text" = "الإستلام";
+"ChatOrderVC_lblSubService_text" = "الخدمة الفرعية";
+"ChatOrderVC_lblDropoff_text" = "التسليم";
+"ChatOrderVC_lblDeliveryFee_text" = "سعر التوصيل";
+"ChatOrderVC_lblServiceFee_text" = "سعر الخدمة";
+"ChatOrderVC_lblCar_text" = "السيارة";
+"ChatOrderVC_lblColor_text" = "اللون";
+"ChatOrderVC_PaySuccess_text" = "تم الدفع بنجاح واتمام الطلب";
+"ChatOrderVC_txtEnterMessage_text" = "ادخل رسالتك ...";
+"OrderCreateVC_menuActions_cancelOrder" = "الغاء الطلب";
+"OrderCreateVC_menuActions_report_order" = "تقديم شكوى";
+"OrderCreateVC_menuActions_reorder" = "اعادة ارسال الطلب";
+"OrderCreateVC_menuActions_rating" = "أرسل تقييم";
+"OrderCreateVC_menuActions_viewOffer" = "تفاصيل العرض";
+"OrderCreateVC_menuActions_orderDetails" = "تفاصيل الطلب";
+"OrderCreateVC_menuActions_AskToPay" = "طلب الدفع من الزبون";
+"OrderCreateVC_menuActions_ProcessOrder" = "بدء تنفيذ الطلب";
+"OrderCreateVC_menuActions_SendFinalPrice" = "تغيير سعر الخدمة";
+"OrderCreateVC_menuActions_arrived_to_service_provider" = "تم الوصل للمزود";
+"OrderCreateVC_menuActions_add_bill" = "إضافة فاتورة";
+"OrderCreateVC_menuActions_request_payment" = "ارسال طلب دعم مالي";
+"OrderCreateVC_menuActions_change_Service_price" = "تغيير سعر الخدمة";
+"OrderCreateVC_menuActions_on_my_way" = "في الطريق اليك";
+"OrderCreateVC_menuActions_arrived" = "وصلت مكان التسليم";
+"OrderCreateVC_menuActions_complete_order" = "تأكيد التوصيل";
+"OrderCreateVC_menuActions_purchase_done" = "تمت عملية الشراء";
+"OrderCreateVC_menuActions_purchase_done_parcels" = "تم استلام الطرد";
+"OrderCreateVC_lblSlideToCancel_text" = "Slide To Cancel";
+"CouponAddedSuccess" = "تمت اضافة الكوبون بنجاح";
+"CouponMissing" = "الرجاء اضافة الكوبون";
+
+//OrderCancelReasonsVC
+"OrderCancelReasonsVC_title" = "اختر سبب الغاء الطلب";
+"OrderCancelReasonsVC_btnCancel_title" = "الغاء الطلب";
+
+//ChatOrderAddInvoiceVC
+"ChatOrderAddInvoiceVC_title_invoice" = "إضافة فاتورة";
+"ChatOrderAddInvoiceVC_title_requestPayment" = "طلب دعم مالي";
+"ChatOrderAddInvoiceVC_lblAddImage_text_invoice" = "صورة الفاتورة";
+"ChatOrderAddInvoiceVC_lblAddImage_text_requestPayment" = "صورتك الشخصية";
+"ChatOrderAddInvoiceVC_lblInvoiceDetails_text" = "تفاصيل الفاتورة";
+"ChatOrderAddInvoiceVC_lblInvoiceTotalPrice_text" = "إجمالي قيمة الفاتورة";
+"ChatOrderAddInvoiceVC_lblFullName_text" = "رقم الجوال";
+"ChatOrderAddInvoiceVC_lblIdentificationNumber_text" = "رقم الهوية";
+"ChatOrderAddInvoiceVC_btnSend_text" = "إرسال";
+"ChatOrderAddInvoiceVC_btnCancel_text" = "إلغاء";
+"ChatOrderAddInvoiceVC_lblCouponDiscount_text" = "قيمة خصم الكبون";
+"ChatOrderAddInvoiceVC_lblTotalPrice_text" = "المجموع النهائي";
+
+"ChatOrderInvoiceTableViewCell_lblCouponNote_text" = "يمكنك التمتع بخصم على القيمة الاجمالية للفاتورة عن طريق ادخال كوبون الخصم";
+"ChatOrderInvoiceTableViewCell_btnAccept_text" = "قبول";
+"ChatOrderInvoiceTableViewCell_btnShowDetails_text" = "التفاصيل";
+"ChatOrderInvoiceTableViewCell_lblCoupon_text" = "كود الخصم";
+"ChatOrderInvoiceTableViewCell_btnCheck_text" = "تحقق";
+
+"ChatOrderRateTableViewCell_lblYourRate_text" = "تقييمك";
+"ChatOrderRateTableViewCell_btnComplete_text" = "إتمام";
+
+
+//ChatOrderIssueVC
+"ChatOrderIssueVC_lblReportType_complaint_text" = "شكوى";
+"ChatOrderIssueVC_lblReportType_compensation_text" = "تعويض";
+"ChatOrderIssueVC_lblReportType_text" = "نوع الشكوى";
+"ChatOrderIssueVC_lblReportDetails_text" = "تفاصيل الشكوى";
+"ChatOrderIssueVC_btnSend_text" = "إرسال";
+"ChatOrderIssueVC_btnCancel_text" = "إلغاء";
+"ChatOrderIssueVC_btnPayNow_text" = "ادفع الان";
+"ChatOrderIssueVC_btnConfirmOrder_text" = "أكد تنفيذ الطلب";
+"ChatOrderIssueVC_btnRate_text" = "قيم الطلب";
+"ChatOrderIssueVC_ThisOrderIsRated_text" = "تم تقييم هذا الطلب";
+
+//OrderOffersVC
+"OrderOffersVC_title" = "عروض الطلب";
+"OrderOffersVC_lblOrder_title" = "الطلب";
+"OrderOffersVC_lblTitle_title" = "باقي خطوات بسيطة وتكمل طلبك بنجاح";
+"OrderOffersVC_lblSubTitle_title" = "جار البحث عن عروض";
+"OrderOffersVC_btnCancel_title" = "الغاء الطلب";
+"OrderOffersCell_lblAllOffers_text" = "كل العروض";
+"OrderOffersCell_lblOfferCost_text" = "المبلغ";
+"OrderOffersCell_lblOfferDate_text" = "التاريخ";
+"OrderOffersCell_lblDeliveryFee_text" = "رسوم التوصيل";
+"OrderOffersCell_lblCar_text" = "السيارة";
+"OrderOffersCell_lblColor_text" = "اللون";
+"OrderOffersCell_btnAccept_text" = "قبول العرض";
+"OrderOffersCell_btnReject_text" = "رفض";
+"OrderOffersCell_btnPayNow_text" = "ادفع الان";
+"OrderOffersCell_Notes_text" = "ملاحظات";
+
+"File download success"                                                    = "تم تحميل الملف بنجاح.";
+
+//ServiceProviersVC
+"ServiceProviersVC_title" = "مزودي الخدمات";
+"ServiceProviersDetailsVC_title" = "تفاصيل مزود الخدمة";
+"Mobile Number" = ": رقم الهاتف";
+"Review Comments and Rates" = "مراجعة التعليقات والأسعار";
+"Comments" = "التعليقات";
+"Rates" = "التقيمات";
+"Add Review" = "اضف تقييمك";
+"Works" = "الاعمال";
+"Regular" = "عادي";
+"Direct" = "مباشر";
+"Server Type" = "نوع الطلب";
+"Time: " = "الوقت: ";
+"Delete Account" = "حذف الحساب";
+"Are you sure delete acount ?" = "هل انت متأكد من حذف الحساب؟";
+"The account will be deleted within 48 hours" = "سيتم حذف الحساب خلال ٤٨ ساعة";
+"Alert" = "تنبيه";
+"Succses" = "نجاح";
+"Orders" = "الطلبات";
+"Income" = "دخل";
+"Profit" = "ربح";
+"Balance" = "رصيد الحساب";
+"Transaction" = "العملية";
+"" = "";

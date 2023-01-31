@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="OrderDetailsImagesCollectionViewCell" id="Dq0-ob-vNU" customClass="OrderDetailsImagesCollectionViewCell" customModule="khdamate" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="279" height="182"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="67V-qZ-0I3">
+                <rect key="frame" x="0.0" y="0.0" width="279" height="182"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cyV-sh-7qD">
+                        <rect key="frame" x="0.0" y="7" width="272" height="175"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="8"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sl8-Wa-ew1" customClass="roundedButton" customModule="khdamate" customModuleProvider="target">
+                        <rect key="frame" x="259" y="0.0" width="20" height="20"/>
+                        <color key="backgroundColor" name="#F0F0F0"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="S8E-ai-Qd6"/>
+                            <constraint firstAttribute="height" constant="20" id="fgO-2S-H5g"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="8"/>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <state key="normal" title="x">
+                            <color key="titleColor" name="#000000"/>
+                        </state>
+                        <connections>
+                            <action selector="btnRemove:" destination="Dq0-ob-vNU" eventType="touchUpInside" id="0UT-SI-3py"/>
+                        </connections>
+                    </button>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_zoom" translatesAutoresizingMaskIntoConstraints="NO" id="QBY-Xb-0Oy">
+                        <rect key="frame" x="129" y="84.5" width="14" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="14" id="ZZk-9y-iQU"/>
+                            <constraint firstAttribute="height" constant="20" id="jhF-5p-aPP"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="QBY-Xb-0Oy" firstAttribute="centerX" secondItem="cyV-sh-7qD" secondAttribute="centerX" id="Ifw-Eu-DlU"/>
+                    <constraint firstItem="cyV-sh-7qD" firstAttribute="top" secondItem="67V-qZ-0I3" secondAttribute="top" constant="7" id="JiV-do-90O"/>
+                    <constraint firstItem="QBY-Xb-0Oy" firstAttribute="centerY" secondItem="cyV-sh-7qD" secondAttribute="centerY" id="KdO-kF-zkN"/>
+                    <constraint firstItem="cyV-sh-7qD" firstAttribute="leading" secondItem="67V-qZ-0I3" secondAttribute="leading" id="M6Y-46-z0S"/>
+                    <constraint firstAttribute="bottom" secondItem="cyV-sh-7qD" secondAttribute="bottom" id="Tcf-mi-pvq"/>
+                    <constraint firstItem="sl8-Wa-ew1" firstAttribute="top" secondItem="67V-qZ-0I3" secondAttribute="top" id="oVZ-vs-v9f"/>
+                    <constraint firstAttribute="trailing" secondItem="sl8-Wa-ew1" secondAttribute="trailing" id="oj4-vd-NFr"/>
+                    <constraint firstAttribute="trailing" secondItem="cyV-sh-7qD" secondAttribute="trailing" constant="7" id="tUL-Vs-tS2"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <size key="customSize" width="279" height="182"/>
+            <connections>
+                <outlet property="btnRemove" destination="sl8-Wa-ew1" id="beO-q4-fDn"/>
+                <outlet property="img" destination="cyV-sh-7qD" id="mSe-gy-2ks"/>
+            </connections>
+            <point key="canvasLocation" x="145.6521739130435" y="-6.0267857142857144"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="ic_zoom" width="13.5" height="18.5"/>
+        <namedColor name="#000000">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="#F0F0F0">
+            <color red="0.94099998474121094" green="0.94099998474121094" blue="0.94099998474121094" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

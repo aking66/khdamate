@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="ServicesListTableViewCell" rowHeight="100" id="Ra8-64-s6i" customClass="ServicesListTableViewCell" customModule="khdamate" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="451" height="100"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Ra8-64-s6i" id="AkK-eb-B4x">
+                <rect key="frame" x="0.0" y="0.0" width="451" height="100"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="eDg-a3-82f">
+                        <rect key="frame" x="0.0" y="0.0" width="451" height="84"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="b9l-u5-XFh" customClass="roundedImage" customModule="khdamate" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="14.5" width="55" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="55" id="dq9-km-d71"/>
+                                    <constraint firstAttribute="width" secondItem="b9l-u5-XFh" secondAttribute="height" multiplier="1:1" id="ze6-m7-gYJ"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="0fr-Ct-NQt">
+                                <rect key="frame" x="67" y="26" width="337" height="32"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fM1-mO-Og5">
+                                        <rect key="frame" x="0.0" y="0.0" width="30.5" height="14.5"/>
+                                        <fontDescription key="fontDescription" type="italicSystem" pointSize="12"/>
+                                        <color key="textColor" name="#091A53"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eSP-zA-T6F">
+                                        <rect key="frame" x="0.0" y="18.5" width="28.5" height="13.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                        <color key="textColor" name="#7D7D7D"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SgW-qH-nqY">
+                                <rect key="frame" x="416" y="24.5" width="35" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="BpH-HX-agF"/>
+                                    <constraint firstAttribute="width" constant="35" id="s9F-f0-6EX"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="ic_favorite"/>
+                                <state key="selected" image="ic_favorite_fill"/>
+                                <connections>
+                                    <action selector="btnFavorite:" destination="Ra8-64-s6i" eventType="touchUpInside" id="X0h-dN-iOQ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="eDg-a3-82f" firstAttribute="top" secondItem="AkK-eb-B4x" secondAttribute="top" id="HRu-RH-vlu"/>
+                    <constraint firstAttribute="trailing" secondItem="eDg-a3-82f" secondAttribute="trailing" id="Ndl-nM-naH"/>
+                    <constraint firstAttribute="bottom" secondItem="eDg-a3-82f" secondAttribute="bottom" constant="16" id="ahO-bG-UE3"/>
+                    <constraint firstItem="eDg-a3-82f" firstAttribute="leading" secondItem="AkK-eb-B4x" secondAttribute="leading" id="as7-tI-92g"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="btnFavorite" destination="SgW-qH-nqY" id="eQV-C2-HA1"/>
+                <outlet property="img" destination="b9l-u5-XFh" id="xEK-hz-8iM"/>
+                <outlet property="lblSubTitle" destination="eSP-zA-T6F" id="zcd-jM-5fz"/>
+                <outlet property="lblTitle" destination="fM1-mO-Og5" id="hE5-X2-vci"/>
+            </connections>
+            <point key="canvasLocation" x="164.49275362318841" y="100.44642857142857"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ic_favorite" width="24" height="24"/>
+        <image name="ic_favorite_fill" width="24" height="24"/>
+        <namedColor name="#091A53">
+            <color red="0.035294117647058823" green="0.10196078431372549" blue="0.32549019607843138" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="#7D7D7D">
+            <color red="0.49019607843137253" green="0.49019607843137253" blue="0.49019607843137253" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

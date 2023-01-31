@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ITSAppUsesNonExemptEncryption</key>
+	<false/>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>comgooglemaps</string>
+	</array>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Tajawal-Bold.ttf</string>
+		<string>Tajawal-Medium.ttf</string>
+		<string>Tajawal-Regular.ttf</string>
+		<string>Poppins-Medium.ttf</string>
+		<string>Poppins-Regular.ttf</string>
+		<string>Poppins-SemiBold.ttf</string>
+	</array>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>remote-notification</string>
+	</array>
+	<key>UIFileSharingEnabled</key>
+	<true/>
+	<key>NSCameraUsageDescription</key>
+	<string>the Application request access to the camera, where it allows the users to open the camera to  select profile photo or attach an image or document to the order.</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>the Application request access to the Photo Library, where it allows the users to open the Photo Library to  select profile photo or attach an image or document to the order.</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>The Application request access to a Microphone, it&apos;s a business need where it allows users to send order details via voice message</string>
+</dict>
+</plist>

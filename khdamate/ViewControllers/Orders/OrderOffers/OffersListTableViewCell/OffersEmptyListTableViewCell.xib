@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="70" id="KGk-i7-Jjw" customClass="OffersEmptyListTableViewCell" customModule="khdamate" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="322" height="70"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="322" height="70"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8nl-97-Vx4">
+                        <rect key="frame" x="0.0" y="0.0" width="322" height="60"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="mJI-Zb-aNj">
+                                <rect key="frame" x="12" y="10" width="298" height="40"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="njL-2Q-HzT">
+                                        <rect key="frame" x="0.0" y="0.0" width="298" height="40"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="X52-ub-LXV">
+                                                <rect key="frame" x="0.0" y="13" width="298" height="14.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="There is no offers yet for this order." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RZR-fE-ixU">
+                                                        <rect key="frame" x="0.0" y="0.0" width="237.5" height="14.5"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="14.5" id="liZ-Cs-Lrn"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                                                        <color key="textColor" name="#00A1C3"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" name="#F7F7F7"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="mJI-Zb-aNj" secondAttribute="trailing" constant="12" id="BKn-eW-6Od"/>
+                            <constraint firstItem="mJI-Zb-aNj" firstAttribute="leading" secondItem="8nl-97-Vx4" secondAttribute="leading" constant="12" id="N6Z-ai-Dm3"/>
+                            <constraint firstItem="mJI-Zb-aNj" firstAttribute="top" secondItem="8nl-97-Vx4" secondAttribute="top" constant="10" id="fkJ-8K-wfa"/>
+                            <constraint firstAttribute="bottom" secondItem="mJI-Zb-aNj" secondAttribute="bottom" constant="10" id="kVs-W2-Wwl"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="8nl-97-Vx4" secondAttribute="trailing" id="Lrr-eG-1mt"/>
+                    <constraint firstItem="8nl-97-Vx4" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="e4g-aw-a3W"/>
+                    <constraint firstItem="8nl-97-Vx4" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="mb3-hO-QI5"/>
+                    <constraint firstAttribute="bottom" secondItem="8nl-97-Vx4" secondAttribute="bottom" constant="10" id="nib-Jl-WGW"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <point key="canvasLocation" x="139.13043478260872" y="109.15178571428571"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="#00A1C3">
+            <color red="0.0" green="0.63137254901960782" blue="0.76470588235294112" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="#F7F7F7">
+            <color red="0.96899998188018799" green="0.96899998188018799" blue="0.96899998188018799" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

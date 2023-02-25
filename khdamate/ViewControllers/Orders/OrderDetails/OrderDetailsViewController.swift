@@ -63,7 +63,8 @@ class OrderDetailsViewController: UIViewController {
     @IBOutlet weak var txtGeneralNote: UITextView!
     
     var routeType: RouteType = .makeOrder
-    
+    var isRecoded: Bool = false
+
     var selectedDate: NSDate? {
         didSet{
             self.updateDateTimeSelection()
@@ -139,7 +140,6 @@ class OrderDetailsViewController: UIViewController {
         
         self.checkPhotosCount()
         
-        self.selectedDate = NSDate()
         
         if UserProfile.sharedInstance.currentUser?.b_provider == true {
             self.imgUser.sd_setImage_(urlString: self.orderObject?.customer_photo ?? "")
@@ -150,7 +150,8 @@ class OrderDetailsViewController: UIViewController {
             self.lblUserName.text = self.orderObject?.provider_name
             self.lblUserPhoneNumber.text = "+" + (self.orderObject?.provider_mobile ?? "")
         }
-        
+       
+
         if routeType == .orderDetails || routeType == .makeOffer {
             if routeType == .orderDetails {
                 btnCancel.isHidden = false
@@ -184,6 +185,9 @@ class OrderDetailsViewController: UIViewController {
             print("self.orderObject?.service_type_name : \(self.orderObject?.service_type_name)")
             let dateFormatter = DateFormatter()
             dateFormatter.dateFormat = "HH:mm:ss"
+            if self.orderObject?.order_time == nil{
+                stackTime.isHidden = true
+            }
             let time = dateFormatter.date(from: self.orderObject?.order_time ?? "")
             self.txtDate.text = self.orderObject?.order_date?.dateString(customFormat: "yyyy-MM-dd",timeZone: TimeZone.current)
             self.txtTime.text = (time?.dateToString(customFormat: "hh:mm"))
@@ -205,7 +209,18 @@ class OrderDetailsViewController: UIViewController {
                 self.viewAudioDescription.isHidden = true
             }else{
                 self.viewAudioDescription.isHidden = false
-                self.recording.url = URL(string: self.orderObject?.audio_description ?? "")
+                let url = URL(string: self.orderObject?.audio_description ?? "")
+//            https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3
+                self.recording = Recording(to: "rr")
+                recording.player = AudioPlayer(cutomeUrl: url!)
+//                recording.player.stop()
+                viewRecord.isHidden = true
+                self.recording.delegate = self
+                DispatchQueue.global(qos: .background).async {
+                    self.recording.prepare()
+                    self.recording.record()
+                    self.recording.stop()
+                }
             }
         } else {
             self.btnRecord.isHidden = false
@@ -214,16 +229,17 @@ class OrderDetailsViewController: UIViewController {
 
             self.recording = Recording(to: "recording.m4a")
             self.recording.delegate = self
-            self.btnRecord.recordView = self.viewRecord
-            self.viewRecord.delegate = self
-
-            btnCancel.isHidden = true
-            btnRequest.isHidden = false
             DispatchQueue.global(qos: .background).async {
                 self.recording.prepare()
                 self.recording.record()
                 self.recording.stop()
             }
+            self.btnRecord.recordView = self.viewRecord
+            self.viewRecord.delegate = self
+
+            btnCancel.isHidden = true
+            btnRequest.isHidden = false
+         
             txtPrimaryType.handlerFunc { [weak self] (item, date) in
                 if let index = self?.txtPrimaryType.index, index > -1 {
                     self!.lblNote.text = "Total Price".localize_ + "\(self?.categories?[index].service_price ??  (UserProfile.sharedInstance.service_price ?? "0"))"
@@ -518,7 +534,7 @@ class OrderDetailsViewController: UIViewController {
             }
         } else {
             let images = self.collectionViewImages.objects.map({ ($0.object as? UIImage) ?? UIImage()})
-            let request = OrderRequest(.addOrder(service_detail_id: self.choosedSubService_id, descriptionValue: self.txtServiceDetails.text, full_address: self.txtAdress.text, order_date: self.txtDate.text, order_time: self.selectedDate?.dateString(customFormat: "HH:mm",timeZone: TimeZone.current), order_type: self.choosedService_type ?? "regular", images: images, media:  try? Data(contentsOf: self.recording.url)))
+            let request = OrderRequest(.addOrder(service_detail_id: self.choosedSubService_id, descriptionValue: self.txtServiceDetails.text, full_address: self.txtAdress.text, order_date: self.txtDate.text, order_time: self.selectedDate?.dateString(customFormat: "HH:mm",timeZone: TimeZone.current), order_type: self.choosedService_type ?? "regular", images: images, media: isRecoded ? (try? Data(contentsOf: self.recording.url)) : nil))
             RequestWrapper.sharedInstance.makeRequest(request: request).executeWithCheckResponse(showLodaer: true, showMsg: true) { (result) in
                 DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 0.2) { [weak self] in
                     AppDelegate.sharedInstance.rootNavigationController.showPopAlert(title: "Success".localize_, message: "OderSuccess".localize_)
@@ -594,8 +610,24 @@ extension OrderDetailsViewController {
 }
 extension OrderDetailsViewController: RecorderDelegate {
     func audioMeterDidUpdate(dB: Float) {
-        print("audioMeterDidUpdate : \(dB)")
+//        print("audioMeterDidUpdate : \(dB)")
     }
+    
+    func start()
+    {
+        recording.record()
+    }
+
+    func stop()
+    {
+        recording.stop()
+    }
+
+    func play()
+    {
+        recording.play()
+    }
+
 }
 
 extension OrderDetailsViewController: RecordViewDelegate {
@@ -623,30 +655,23 @@ extension OrderDetailsViewController: RecordViewDelegate {
         self.duration = duration
         self.viewRecord.isHidden = true
         self.viewContaner.isHidden = !self.viewRecord.isHidden
-        
-        let request = ChatOrderRequest(.sendMessage(order_id: self.order_id, type: .voice, media: try? Data(contentsOf: self.recording.url), text: nil))
-//        RequestWrapper.sharedInstance.makeRequest(request: request).executeWithCheckResponse(showLodaer: true, showMsg: true) { responce in
-//            let obj = TChatObject(fromDictionary: [:])
-//            obj.s_answered = nil
-//            obj.my_messsage = NSNumber(value: true)
-//            obj.created_at = NSDate()
-//            obj.pk_i_id = nil
-//            obj.category = ChatCategory.regular.rawValue
-//            obj.s_photo = nil
-//            obj.s_text = nil
-//            obj.s_total_price = nil
-//            obj.types = ChatType.voice.rawValue
-//            obj.value = responce.media_path
-////
-////            self.appedChatObjects(obj: obj)
-////            self.scrollToEnd()
-//        }
+        isRecoded = true
     }
     
     @IBAction func btnPlay(_ sender: Any) {
 
         guard let url = self.recording.url else {
             return
+        }
+        if routeType == .orderDetails || routeType == .makeOffer {
+            if self.orderObject?.audio_description != nil{
+                //            https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3
+                
+                let url = URL(string: self.orderObject?.audio_description ?? "")
+                recording.player.stop()
+                //self.tableView.reloadData()
+                recording.player = AudioPlayer(cutomeUrl: url!)
+            }
         }
         if recording.player.currentItemURL?.absoluteString ?? "" != self.recording.url.absoluteString {
             recording.player.stop()
@@ -663,8 +688,18 @@ extension OrderDetailsViewController: RecordViewDelegate {
             }
             recording.player.stop()
           //  self.tableView.reloadData()
-            
-            recording.player = AudioPlayer(cutomeUrl: url)
+            if routeType == .orderDetails || routeType == .makeOffer {
+                if self.orderObject?.audio_description != nil{
+                    //            https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3
+                    
+                    let url = URL(string: self.orderObject?.audio_description ?? "")
+                    recording.player.stop()
+                    //self.tableView.reloadData()
+                    recording.player = AudioPlayer(cutomeUrl: url!)
+                }
+            }else{
+                recording.player = AudioPlayer(cutomeUrl: url)
+            }
             recording.play()
             self.btnPlay.setImage(UIImage(named: "ic_order_create_pause_full"), for: .normal)
 //            tempVoiceCell = self

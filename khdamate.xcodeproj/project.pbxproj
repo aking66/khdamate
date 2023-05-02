@@ -228,6 +228,7 @@
 		43DE4C5427A42C8A00C0C5BD /* OffersEmptyListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43DE4C5227A42C8A00C0C5BD /* OffersEmptyListTableViewCell.xib */; };
 		43E79C0B27C3A0E600931A4B /* _TPaymentURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E79C0A27C3A0E600931A4B /* _TPaymentURL.swift */; };
 		43E79C0D27C3A0F900931A4B /* TPaymentURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E79C0C27C3A0F900931A4B /* TPaymentURL.swift */; };
+		8120988A29FC0E5000D8E44A /* PassKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8120988929FC0E4F00D8E44A /* PassKit.framework */; };
 		8163EE2F29421C6400E41460 /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8163EE2E29421C6100E41460 /* EditProfileViewController.swift */; };
 		8163EE3029421C7200E41460 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8163EE2A29421BCF00E41460 /* ProfileViewController.swift */; };
 		8163EE3329426EE700E41460 /* KHProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8163EE3229426EE700E41460 /* KHProfile.swift */; };
@@ -500,6 +501,7 @@
 		43E79C0A27C3A0E600931A4B /* _TPaymentURL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = _TPaymentURL.swift; sourceTree = "<group>"; };
 		43E79C0C27C3A0F900931A4B /* TPaymentURL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TPaymentURL.swift; sourceTree = "<group>"; };
 		63D77BDC21318B6A67880F0D /* Pods-khdamate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-khdamate.debug.xcconfig"; path = "Target Support Files/Pods-khdamate/Pods-khdamate.debug.xcconfig"; sourceTree = "<group>"; };
+		8120988929FC0E4F00D8E44A /* PassKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PassKit.framework; path = System/Library/Frameworks/PassKit.framework; sourceTree = SDKROOT; };
 		8163EE2A29421BCF00E41460 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		8163EE2E29421C6100E41460 /* EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
 		8163EE3229426EE700E41460 /* KHProfile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KHProfile.swift; sourceTree = "<group>"; };
@@ -536,6 +538,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8120988A29FC0E5000D8E44A /* PassKit.framework in Frameworks */,
 				433AEF15278D9DDF009755AC /* PayFortSDK.xcframework in Frameworks */,
 				974B35E594311102A835BEE6 /* Pods_khdamate.framework in Frameworks */,
 			);
@@ -1283,6 +1286,7 @@
 		70A91215ECA770AD9B1000B4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8120988929FC0E4F00D8E44A /* PassKit.framework */,
 				830747906335EA11AD8E2BAA /* Pods_khdamate.framework */,
 			);
 			name = Frameworks;
@@ -1924,7 +1928,7 @@
 				CODE_SIGN_ENTITLEMENTS = khdamate/khdamate.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = QHHBCX9D56;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1954,7 +1958,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.2;
+				MARKETING_VERSION = 1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.app.ProServices;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1972,7 +1976,7 @@
 				CODE_SIGN_ENTITLEMENTS = khdamate/khdamate.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = QHHBCX9D56;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2002,7 +2006,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.2;
+				MARKETING_VERSION = 1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.app.ProServices;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";

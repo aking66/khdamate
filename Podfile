@@ -100,6 +100,8 @@ def custom_pods
     pod 'FSCalendar'# https://github.com/WenchaoD/FSCalendar
     pod 'DKCamera'
     pod 'QBImagePickerController'
+    
+    pod 'Urway',:git => "https://github.com/URWAYios/UrwaySDK.git"
 end
 
 target 'khdamate' do

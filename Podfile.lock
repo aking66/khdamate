@@ -209,6 +209,7 @@ PODS:
   - SwiftyJSON (4.0.0)
   - "UINavigationBar+Addition (1.3.0)"
   - "UITextView+Placeholder (1.3.3)"
+  - Urway (2.0.0)
 
 DEPENDENCIES:
   - ActiveLabel
@@ -259,6 +260,7 @@ DEPENDENCIES:
   - SwiftyCodeView
   - "UINavigationBar+Addition"
   - "UITextView+Placeholder (= 1.3.3)"
+  - Urway (from `https://github.com/URWAYios/UrwaySDK.git`)
 
 SPEC REPOS:
   trunk:
@@ -330,6 +332,8 @@ EXTERNAL SOURCES:
     :git: https://gitlab.com/mja050/ezswiftextensions.git
   FDTake:
     :git: https://gitlab.com/mja050/fdtake.git
+  Urway:
+    :git: https://github.com/URWAYios/UrwaySDK.git
 
 CHECKOUT OPTIONS:
   AlertsPickers:
@@ -344,6 +348,9 @@ CHECKOUT OPTIONS:
   FDTake:
     :commit: 84d525859e550e7a5b9dac0800d68cd0e57f8a09
     :git: https://gitlab.com/mja050/fdtake.git
+  Urway:
+    :commit: e40979ebbcab88777a3f704ff79ebc2c2862c849
+    :git: https://github.com/URWAYios/UrwaySDK.git
 
 SPEC CHECKSUMS:
   ActiveLabel: 5e3f4de79a1952d4604b845a0610d4776e4b82b3
@@ -408,7 +415,8 @@ SPEC CHECKSUMS:
   SwiftyJSON: 070dabdcb1beb81b247c65ffa3a79dbbfb3b48aa
   "UINavigationBar+Addition": 433c16a992cfb73c3141b1f7fcaa93169c15cfa0
   "UITextView+Placeholder": c407b27599ea23cca425946fee3cf1db5d547008
+  Urway: b38da7b507d5d9afa8d178d040e82840379ddd98
 
-PODFILE CHECKSUM: f47e6ce22d3f787f83841cced1149b478cdd025d
+PODFILE CHECKSUM: f6b2e9fba3c5f17284daddb915663c0ada75efd5
 
-COCOAPODS: 1.11.3
+COCOAPODS: 1.12.0
